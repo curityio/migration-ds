@@ -16,7 +16,6 @@
 
 plugins {
     id 'java-library'
-    id 'groovy'
 }
 
 group = 'io.curity.identityserver.plugin.data.access.migration'
@@ -30,7 +29,6 @@ repositories {
 dependencies {
     compileOnly 'se.curity.identityserver:identityserver.sdk:9.3.0'
     compileOnly 'org.slf4j:slf4j-api:2.0.12'
-    implementation 'com.google.guava:guava:33.2.0-jre'
 }
 
 java {
