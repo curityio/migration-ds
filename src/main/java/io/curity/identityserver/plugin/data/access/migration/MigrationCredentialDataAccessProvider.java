@@ -26,7 +26,7 @@ public final class MigrationCredentialDataAccessProvider implements CredentialVe
         boolean isMigratedAndMatching = _configuration.getMigratedCredentialManager()
                 .verifyPassword(subject.getSubject(), password);
 
-        if (isMigratedAndMatching)
+        if (!isMigratedAndMatching)
         {
             boolean isInLegacy = _configuration.getLegacyCredentialManager()
                     .verifyPassword(subject.getSubject(), password);
